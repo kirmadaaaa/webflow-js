@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.slide-content {
+  margin-top: 12px;
+}
+
+/* Thumbnails */
+.thumbs {
+  display: flex;
+  gap: 12px;
+}
+
+.thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.thumb.active {
+  background: #000;
+}
