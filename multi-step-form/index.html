@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="multiStepForm">
+      <!-- Hidden fields (analytics-ready) -->
+      <input type="hidden" name="form_name" value="Contact – Multi Step" />
+      <input type="hidden" name="page_url" id="pageUrl" />
+      <input
+        type="hidden"
+        name="business_type_selected"
+        id="businessTypeHidden"
+      />
+
+      <!-- STEP 1 -->
+      <div class="form-step active" data-step="1">
+        <h2>Let’s start with the basics</h2>
+        <p>This helps us understand who we’re speaking with.</p>
+
+        <label>
+          Full name
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="e.g. David Arakkal"
+          />
+        </label>
+
+        <label>
+          Work email
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="e.g. david@company.com"
+          />
+        </label>
+
+        <button type="button" class="btn-primary" data-next>Continue →</button>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="form-step" data-step="2">
+        <h2>Tell us about your business</h2>
+        <p>So we can tailor our response to you.</p>
+
+        <label>
+          Business type
+          <select id="businessType" required>
+            <option value="">Select one</option>
+            <option value="solo">Solo / Freelancer</option>
+            <option value="proprietorship">Proprietorship</option>
+            <option value="smb">Small–Medium Business</option>
+            <option value="enterprise">Enterprise / Large Team</option>
+          </select>
+        </label>
+
+        <div class="nav-buttons">
+          <button type="button" class="btn-secondary" data-prev>← Back</button>
+          <button type="button" class="btn-primary" data-next>
+            Continue →
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="form-step" data-step="3">
+        <h2>How can we help?</h2>
+        <p>A few details help us get back to you faster.</p>
+
+        <label>
+          Your message
+          <textarea
+            required
+            placeholder="Tell us about your goals, challenges, or what you’re looking to build…"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Get in touch</button>
+
+        <small>We usually respond within 1–2 business days.</small>
+      </div>
+    </form>
+
+    <script src="form.js"></script>
+  </body>
+</html>
