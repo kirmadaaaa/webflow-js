@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  background-color: #006bff; /* Calendly Blue */
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: #0056ce;
+  transform: translateY(-2px);
+}

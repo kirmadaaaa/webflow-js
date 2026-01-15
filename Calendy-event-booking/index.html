@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enterprise Booking Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <h1>Scale your Enterprise with AI</h1>
+        <p>Schedule a 30-minute discovery call with our technical team.</p>
+        <div id="calendly-inline-embed"></div>
+        <button id="book-btn" class="button-primary">
+          Book 30-min Meeting
+        </button>
+      </div>
+    </section>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+  // This code runs automatically when the page loads
+  window.onload = function () {
+    Calendly.initInlineWidget({
+      url: "https://calendly.com/davidarakkal99/30min",
+      parentElement: document.getElementById("calendly-inline-embed"),
+      prefill: {},
+      utm: {},
+    });
+  };
+</script>
