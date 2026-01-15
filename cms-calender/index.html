@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webflow CMS Bridge Simulation</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Enterprise Event Portal</h1>
+      <p>
+        This page demonstrates the 'Data Handshake' between HTML and JavaScript.
+      </p>
+    </header>
+
+    <section id="cms-data-source" class="hidden-data">
+      <div class="cms-item">
+        <div class="event-title">Q1 Strategy Meeting</div>
+        <div class="event-start">2026-01-20T09:00:00</div>
+        <div class="event-color">#1d4ed8</div>
+      </div>
+      <div class="cms-item">
+        <div class="event-title">Webflow Developer Workshop</div>
+        <div class="event-start">2026-01-22T14:00:00</div>
+        <div class="event-color">#7c3aed</div>
+      </div>
+      <div class="cms-item">
+        <div class="event-title">Public Holiday</div>
+        <div class="event-start">2026-01-26</div>
+        <div class="event-color">#ef4444</div>
+      </div>
+    </section>
+
+    <main class="calendar-app">
+      <div id="calendar"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
