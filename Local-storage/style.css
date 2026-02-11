@@ -1,0 +1,38 @@
+/* Base Styles */
+body {
+  font-family: sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Theme Classes */
+body.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+}

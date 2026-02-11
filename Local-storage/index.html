@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webflow Logic Test - LocalStorage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="welcome-text">Welcome, <span id="display-name">Guest</span>!</h1>
+
+      <div class="form-group">
+        <input type="text" id="user-name" placeholder="Enter Name" />
+        <select id="theme-pref">
+          <option value="light">Light Mode</option>
+          <option value="dark">Dark Mode</option>
+        </select>
+        <button id="save-btn">Create/Update Profile</button>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <label>Switch Profile:</label>
+        <select id="profile-dropdown">
+          <option value="">Select a user...</option>
+        </select>
+      </div>
+
+      <button id="clear-btn">Clear All Data</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
