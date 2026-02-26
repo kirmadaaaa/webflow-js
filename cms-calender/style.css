@@ -19,7 +19,7 @@ body {
 
 /* THE CMS BRIDGE STYLING */
 .hidden-data {
-  display: none; /* Change to 'block' if you want to see the raw CMS data */
+  display: block; /* Change to 'block' if you want to see the raw CMS data */
   background: #fff4e5;
   padding: 10px;
   border: 1px dashed #ffa500;
